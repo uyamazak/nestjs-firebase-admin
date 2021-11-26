@@ -10,7 +10,7 @@
     "dist/**/*",
     "*.md"
   ],
-  "homepage": "https://github.com/tfarras/nestjs-firebase-admin#readme",
+  "homepage": "https://github.com/uyamazak/nestjs-firebase-admin#readme",
   "keywords": [
     "node.js",
     "nestjs",
@@ -26,15 +26,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tfarras/nestjs-firebase-admin.git"
+    "url": "git+https://github.com/uyamazak/nestjs-firebase-admin.git"
   },
   "bugs": {
-    "url": "https://github.com/tfarras/nestjs-firebase-admin/issues"
+    "url": "https://github.com/uyamazak/nestjs-firebase-admin/issues"
   },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "prepublishOnly": "nest build",
+    "postinstall": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
